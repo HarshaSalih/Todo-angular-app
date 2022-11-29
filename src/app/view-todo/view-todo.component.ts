@@ -11,7 +11,7 @@ export class ViewTodoComponent {
 
   constructor(private api:ApiService)
   {
-    api.fetchCourses().subscribe(
+    api.fetchTodo().subscribe(
       (response)=>{
         this.todo=response;
       }
